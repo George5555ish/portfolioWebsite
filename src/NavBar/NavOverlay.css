@@ -1,0 +1,219 @@
+#nav-overlay-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 1s ease;
+
+}
+
+nav{
+  background-color: #fff;
+}
+
+.open-nav #nav-overlay-content .content{
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+   transition: 1s;
+}
+
+.open-nav #nav-overlay-content .content ul li a{
+
+  transition: 0.2s;
+}
+a{
+    text-decoration: none;
+}
+
+.close, #nav-overlay-content .content{
+    visibility: visible;
+    transition:height visibility .5s;
+    /* animation: movediv 8s ease; */
+    
+}
+@keyframes movediv{
+    0%{
+        height: 0;
+    }
+
+    30%{
+      opacity: 0;
+    }
+   
+    100%{
+        height: 100vh;
+    }
+}
+#nav-overlay-content .content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3336;
+    /* border: 1px solid; */
+    /* visibility: hidden; */
+    transition:opacity .5s;
+    -webkit-transform: translate3d(0, 0, 0);
+    background-color: #050513;
+    opacity: 80%;
+    transform: translate3d(0, 0, 0);
+    will-change: height background-color;
+    /* top: -2px; */
+    left: 0;
+    
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+  }
+
+
+ .close, #nav-overlay-content .content h5 {
+    color: #cccbcb;
+    /* opacity: 0; */
+    text-align: center;
+    transition: opacity .4s cubic-bezier(0.3, 0, 0.5, 1) 0s;
+    font-size: 35px;
+  }
+
+  .open-nav #nav-overlay-content .content ul {
+  opacity: 0;
+   
+  }
+  .close,#nav-overlay-content .content ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+   
+  }
+   #nav-overlay-content .content ul > li {
+    font-family: "Helvetica Now Display DW", sans-serif;
+    letter-spacing: -0.01em;
+    position: relative;
+    list-style-type: none;
+    font-weight: 800;
+    text-align: center;
+    /* opacity: 0; */
+    transition: opacity .5s;
+    font-size: 1rem;
+    
+  }
+
+  #nav-overlay-content .content ul{
+    transition: opacity .5s;
+  }
+
+  .close,  #nav-overlay-content .content ul > li {
+   
+      /* transition: 0.5s; */
+      opacity: 1;
+  }
+
+  #nav-overlay-content .content ul > li a i:hover ~ 
+  #nav-overlay-content .content {
+      background-color: #1d283b;
+  }
+  #nav-overlay-content .content ul > li a {
+    position: relative;
+    color: #1d283b;
+    border: 0 none;
+    transition: opacity 0.4s;
+    /* display: inline-block; */
+    font-size: 60px;
+    padding:25px;
+    font-family: 'Lato';
+    font-weight: 900;
+    float: left;
+
+  }
+  #nav-overlay-content .content ul > li a > i {
+    display: none;
+  }
+  #nav-overlay-content .content ul > li a.active,
+  #nav-overlay-content .content ul > li a:active {
+    color: #fff;
+  }
+
+
+  .overlay-image{
+    visibility: hidden;
+      transition: visibility 0.5s;
+  }
+ .close .overlay-image{
+      position: fixed;
+      top: 80px;
+      z-index: 228;
+      width: inherit;
+      height: 100vh;
+      transition: .5s;
+      /* background:url('../images/george-picture.png');
+      background-repeat: no-repeat;
+      background-position: right; */
+     visibility: visible;
+     animation: movediv 2s ease;
+  }
+
+  .close .overlay-image2{
+    position: absolute;
+    top: 88px;
+    z-index: 228;
+    width: inherit;
+    height: 200vh;
+    transition: .5s;
+    background-repeat: no-repeat;
+    /* background-position: right; */
+   visibility: visible;
+   animation: movediv 1s ease-in;
+    background: url('../images/portfolio-real2.svg');
+  }
+
+  .close .overlay-image3{
+    position: absolute;
+    top: 88px;
+    z-index: 228;
+    width: inherit;
+    height: 200vh;
+    transition: .5s;
+    background-repeat: no-repeat;
+    background-position: right;
+   visibility: visible;
+   animation: movediv 1s ease-in;
+    background: url('../images/right-arrow.svg');
+  }
+
+  .nav-con:hover .overlay-image{
+      transition: .5s;
+      background: url('../images/portfolio-real2.svg');
+      display: block;
+  }
+
+
+  #nav-overlay-content .content ul > li a:hover, .overlay-image{
+      opacity: 1;
+  }
+   /*  */
+
+  #nav-overlay-content .content ul > li a:hover,
+   #nav-overlay-content .content ul li{
+    color: #c5c9d1;
+    transition: 0.235s;
+  }
+
+
+
+
+  /* #080e1a */

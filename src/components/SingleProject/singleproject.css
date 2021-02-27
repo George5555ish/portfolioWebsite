@@ -1,0 +1,63 @@
+.project-row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-row-gap: 150px;
+    margin-bottom: 120px;
+}
+
+.project-info{
+  /* width: 50%; */
+  /* border: 1px solid green; */
+
+}
+.project-info-header{
+  
+}
+
+.margin-top-class{
+    margin-top: 30px;
+}
+.project-info > h5{
+    color: #878a8f;
+    font-family: 'Big Shoulders Display';
+    font-size: 25px;
+    letter-spacing: 0.33rem;
+    line-height: 50px;
+    text-transform: uppercase;
+
+}
+
+
+
+.project-content {
+   /* border: 1px solid orange; */
+}
+
+.project-heading{
+    width: 80%;
+    line-height: 50px;
+    padding: 5px 0;
+    font-size: 300%;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.project-content > div {
+    /* display: block; */
+    /* border: 1px solid; */
+    width: 43rem;
+}
+
+h4{
+    font-family: 'Inter', sans-serif;;
+}
+
+.header-light{
+    font-weight: 900;
+    color: #878a8f;
+    letter-spacing: normal;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}

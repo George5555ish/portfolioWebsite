@@ -1,0 +1,108 @@
+.margin-bottom{
+    margin-bottom: 200px;
+   border: 1px solid transparent;
+}
+
+.list{
+    margin-bottom: 60px;
+    /* border: 1px solid; */
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0;
+}
+
+hr{
+    border-top: 1px solid #e7e8e9;
+    margin: 80px 0;
+}
+.about-top{
+    text-align: center;
+    margin: 0 auto;
+ 
+    width: 80%;
+    
+    
+}
+
+.about-first > h1{ 
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 0.25rem;
+
+}
+
+.about-top > *, .about-first > *{
+   
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.about-first > h5{
+    font-family: 'Big Shoulders Display';
+    font-size: 25px;
+    letter-spacing: 0.22em;
+    line-height: 30px;
+    color:gray;
+}
+
+.about-second > h3{
+    font-family: 'Lato';
+    color:gray
+}
+
+
+
+/* SERVICES */
+
+.about-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    text-align: center;
+}
+
+.about-services > h3{
+
+ 
+    width: 65%;
+    
+
+}
+
+.about-services > h5{
+    text-align:center;
+    font-family: 'Lato';
+    color: gray;
+    font-size: 1.2em;
+}
+.text-left-center{
+    display: flex;
+    
+}
+
+em{
+    font-weight: bold;
+    color: gray;
+    font-size: 1.8rem;
+    margin: 0 10px;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    font-family: 'Lato';
+    font-size: 20px;
+    padding: 10px;
+}
+
+.line > div:nth-child(2) {
+    margin: 0 20px;
+    color: gray;
+    /* border: 1px solid; */
+  }

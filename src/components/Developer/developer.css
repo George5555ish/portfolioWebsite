@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+.developer{
+ width: 100%;
+ top: 5px;
+ position: relative;
+
+}
+/* .main img{
+  width: 50px;
+  position: relative;
+  top: -100px;
+} */
+.developer .img1 {
+    width: inherit;
+    
+}
+
+
+
+  .main-copy h5{
+    font-family: 'Big Shoulders Display';
+    font-size: 25px;
+    letter-spacing: 0.33rem;
+    padding-bottom: 45px;
+  }
+
+  .main-copy .large{
+     font-family: 'Lato';
+      font-size: 4rem;
+     
+      font-weight: 900;
+  }
+
+  .main-copy .header-light{
+    /* font-weight: 500; */
+    color: #878a8f;
+    letter-spacing: normal;
+    font-family: 'Lato' sans-serif;
+   
+    margin-top: 65px;
+    
+  }
+
+  .hover-help, .harding{
+      text-decoration: none;
+      color: #000;
+      font-weight: 800;
+      padding:  20px;
+   transition: 0.25s ease;
+  }
+
+  .hover-help:hover {
+   
+      
+      border-width: 80%;
+  }
+
+  .links{
+      display: flex;
+      padding: 20px;
+      
+  }
+
+ 
+/* #f6f5f5 */
