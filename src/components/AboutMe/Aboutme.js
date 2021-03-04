@@ -1,13 +1,10 @@
 import React from "react";
+import './aboutme.css';
 
 export default function Aboutme() {
   return (
     <div className="container">
-
-    <div className="margin-bottom">
-
-    </div>
-      <div className="about-main ">
+      <div className="about-main margin-bottom">
      
         <section className="about-top">
          
@@ -73,7 +70,7 @@ export default function Aboutme() {
           <section className="about-top">
          
         
-         <div classNameName="about-first">
+         <div className="about-first">
            <h5>EXPERIENCE</h5>
            <h1>
          Over 2 years of work experience
