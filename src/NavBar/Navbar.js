@@ -51,14 +51,14 @@ window.onscroll = function () {
           </svg>
           <img src={overlay ? NameImg2 :NameImg} className="image-text" alt=""/>
         </a>
-        <a href="#"className="menu" onClick={() => setToogle()} style={{"transition": .5}}>
+        {/* <a href="#"className="menu" onClick={() => setToogle()} style={{"transition": .5}}>
           <span >{overlay ? 'CLOSE' : 'MENU'}</span>
           <b>
             <i></i>
             <i></i>
             <i></i>
           </b>
-        </a>
+        </a> */}
 
        
       </header>
