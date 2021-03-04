@@ -1,11 +1,13 @@
 import React from "react";
+import GoBack from "../GoBack/GoBack";
 import './aboutme.css';
 
 export default function Aboutme() {
   return (
     <div className="container">
       <div className="about-main margin-bottom">
-     
+     <GoBack />
+
         <section className="about-top">
          
         

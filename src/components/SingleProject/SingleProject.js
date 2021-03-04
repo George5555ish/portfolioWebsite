@@ -2,6 +2,7 @@ import React, {useState, useEffect}from 'react';
 import totalObjects from '../../data/projects';
 import internal from '../../data/internal';
 import "./singleproject.css";
+import GoBack from '../GoBack/GoBack';
 export default function SingleProject() {
     const [location, setLocation] = useState('');
     // const [finalObject, setFinalObject] = useState('');
@@ -51,6 +52,8 @@ export default function SingleProject() {
 
 
         <div className="container">
+
+        <GoBack />
          <div className="margin-bottom">
 
 </div>
