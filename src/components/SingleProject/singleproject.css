@@ -5,6 +5,16 @@
     justify-content: space-between;
     grid-row-gap: 150px;
     margin-bottom: 120px;
+    width: 100%;
+    
+}
+
+@media (max-width: 670px){
+    .project-row{
+        flex-direction: column;
+     
+        /* width: 100%; */
+    }
 }
 
 .project-info{
@@ -31,9 +41,7 @@
 
 
 
-.project-content {
-   /* border: 1px solid orange; */
-}
+
 
 .project-heading{
     width: 80%;
@@ -48,6 +56,15 @@
     /* display: block; */
     /* border: 1px solid; */
     width: 43rem;
+  
+}
+
+@media (max-width: 670px){
+    .project-content > div {
+        
+     
+        width: auto;
+    }
 }
 
 h4{

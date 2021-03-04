@@ -2,9 +2,6 @@ import React, {useState, useEffect}from 'react';
 import totalObjects from '../../data/projects';
 import internal from '../../data/internal';
 import "./singleproject.css";
-import img1 from '../../images/project-images/pathfinder.JPG';
-import img11 from '../../images/developer3.png';
-import img3 from '../../images/george-picture.png';
 export default function SingleProject() {
     const [location, setLocation] = useState('');
     // const [finalObject, setFinalObject] = useState('');
@@ -24,7 +21,7 @@ export default function SingleProject() {
       
 
         setLocation(loc);
-    });
+    },[]);
 
  const project = totalObjects.map(projectArray => projectArray);
 
@@ -58,51 +55,46 @@ export default function SingleProject() {
 
 </div>
       {
-          object1 !== undefined &&  <div><div class="project-row">
+          object1 !== undefined &&  <div>
+          <div className="project-row">
    
 
-            <div class="project-info"> 
+            <div className="project-info"> 
             <h5 className="project-info-header">Case study</h5>
         
             <h1 className="project-heading">{object1.title}</h1>
-        <h5 className="margin-top-class">My role</h5>
-        <h4 class="header-dark">Creative Direction<br></br>
-        UX / UI<br></br>
-        Website Design<br></br>
-        Icon Design</h4>
+        <h5 className="margin-top-class">Tech Stack</h5>
+        <h4 className="header-dark">{object1.techStack1}<br></br>
+        {object1.techStack2}<br></br>
+        {object1.techStack3}<br></br>
+       </h4>
 
-        <h4 className="header-dark">InVision</h4>
         <h5 className="margin-top-class">Year</h5>
         <h4 className="header-dark">{object1.date}</h4>
             </div>
 
             
-            <div  class="project-content"> 
+            <div  className="project-content"> 
 
             <div> 
             
-            <p class="header-light"> InVision Studio is a new powerful tool where you can design, prototype and animate your projects easily.
-        One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design.
-        I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, 
-        we began shaping requirements for the Basic UX project.
+            <p className="header-light tech-text"> {object1.text1}
+   
         </p><br></br>
-        <p class="header-light">
-        Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster.
-        Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements.
-        You can easily customize and combine them when working on your wireframes.
+        <p className="header-light tech-text">{object1.text2}
+      
         </p>
         <br></br>
-        <p class="header-light">
-        Aside from that, I was in touch with the Director of Product and the InVision tech team to report issues and bugs that I found within the software, as well as to propose improvements regarding certain functionalities.
-        It was exciting to see how the product evolved and improved with each update during this short time.
+        <p className="header-light tech-text">
+        {object1.text3}
+     
         </p>
         <br></br>
-        <p class="header-light">
-        The final deliverable was a family of 4 products that you can download and use for free.
-        Just download <a href="https://www.invisionapp.com/studio/" target="_blank">InVision Studio</a>, open their App Store and search for 128 Outline Icons, eCommerce Wireframe Kit, User Interface Kit and Web Wireframe Kit.
+        <p className="header-light tech-text">
+        The final deliverable can be viewed as a live demo below:
         </p>
         <br></br>
-        <p class="header-light"><a href="https://www.behance.net/gallery/81908469/Basic-UX-Free-design-resources-for-InVision-Studio" target="_blank">View case study on Behance.</a></p>
+        <p className="header-light"><a href={object1.projectHref} target="_blank" rel="noreferrer">View Live Demo</a></p>
        
        </div>
           
@@ -116,7 +108,7 @@ export default function SingleProject() {
             object1.imageUrl.map((image, index) => {
                 
                 const count = index + 1;
-                return <img src={process.env.PUBLIC_URL + '/images/project-images/project'+object1.imgProp+'/pathfinder'+count +'.JPG'} width="100%"/> 
+                return <img src={process.env.PUBLIC_URL + '/images/project-images/project'+object1.imgProp+'/pathfinder'+count +'.JPG'} width="100%" key={index} alt=""/> 
             })
         }
         </div>
@@ -124,50 +116,46 @@ export default function SingleProject() {
       }
 
       {
-          object2 !== undefined && <div> <div class="project-row">
+          object2 !== undefined && <div> <div className="project-row">
    
 
-   <div className="project-info"> 
-   <h5 className="project-info-header">Case study</h5>
+          <div className="project-info"> 
+            <h5 className="project-info-header">Case study</h5>
+        
+            <h1 className="project-heading">{object2.title}</h1>
+        <h5 className="margin-top-class">Tech Stack</h5>
+        <h4 className="header-dark">{object2.techStack1}<br></br>
+        {object2.techStack2}<br></br>
+        {object2.techStack3}<br></br>
+       </h4>
 
-   <h1 className="project-heading">{object2.title}</h1>
-<h5 >My role</h5>
-<h4 className="header-dark">object 2<br></br>
-UX / UI<br></br>
-Website Design<br></br>
-Icon Design</h4>
-
-<h4 class="header-dark">InVision</h4>
-<h5>Year</h5>
-<h4 class="header-dark">{object2.date}</h4>
-   </div>
+        <h5 className="margin-top-class">Year</h5>
+        <h4 className="header-dark">{object2.date}</h4>
+            </div>
 
    
    <div  className="project-content"> 
 
-   <div> <p class="header-light"> InVision Studio is a new powerful tool where you can design, prototype and animate your projects easily.
-One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design.
-I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, 
-we began shaping requirements for the Basic UX project.</p>
+   <div> <p className="header-light"> {
+       object2.text1
+   }</p>
 <br></br>
 <p className="header-light">
-Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster.
-Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements.
-You can easily customize and combine them when working on your wireframes.
+{object2.text2}
 </p>
 <br></br>
 <p className="header-light">
-Aside from that, I was in touch with the Director of Product and the InVision tech team to report issues and bugs that I found within the software, as well as to propose improvements regarding certain functionalities.
-It was exciting to see how the product evolved and improved with each update during this short time.
+{
+    object2.text3
+}
 </p>
 <br></br>
 <p className="header-light">
-The final deliverable was a family of 4 products that you can download and use for free.
-Just download <a href="https://www.invisionapp.com/studio/" target="_blank">InVision Studio</a>, open their App Store and search for 128 Outline Icons, eCommerce Wireframe Kit, User Interface Kit and Web Wireframe Kit.
-</p>
-<br></br>
-<h4 className="header-light"><a href="https://www.behance.net/gallery/81908469/Basic-UX-Free-design-resources-for-InVision-Studio" target="_blank">View case study on Behance.</a></h4>
-
+        The final deliverable can be viewed as a live demo below
+        </p>
+        <br></br>
+        <p className="header-light"><a href={object2.projectHref} target="_blank" rel="noreferrer">View Live Demo</a></p>
+       
 </div>
  
    </div>
@@ -179,7 +167,7 @@ Just download <a href="https://www.invisionapp.com/studio/" target="_blank">InVi
             object2.imageUrl.map((image, index) => {
                 
                 const count = index + 1;
-                return <img src={process.env.PUBLIC_URL + '/images/project-images/project'+object2.imgProp+'/pathfinder'+count +'.JPG'} width="100%"/> 
+                return <img src={process.env.PUBLIC_URL + '/images/project-images/project'+object2.imgProp+'/pathfinder'+count +'.JPG'} width="100%" key={index} alt=""/> 
             })
         }
         </div>
@@ -187,50 +175,41 @@ Just download <a href="https://www.invisionapp.com/studio/" target="_blank">InVi
       }
 
       {
-          object3 !== undefined &&  <div><div class="project-row">
+          object3 !== undefined &&  <div><div className="project-row">
    
 
-   <div class="project-info"> 
-   <h5>Case study</h5>
+          <div className="project-info"> 
+            <h5 className="project-info-header">Case study</h5>
+        
+            <h1 className="project-heading">{object3.title}</h1>
+        <h5 className="margin-top-class">Tech Stack</h5>
+        <h4 className="header-dark">{object3.techStack1}<br></br>
+        {object3.techStack2}<br></br>
+        {object3.techStack3}<br></br>
+       </h4>
 
-   <h1 className="project-heading">{object3.title}</h1>
-<h5 >My role</h5>
-<h4 class="header-dark">Creative Direction<br></br>
-UX / UI<br></br>
-Website Design<br></br>
-Icon Design</h4>
-
-<h4 class="header-dark">InVision</h4>
-<h5>Year</h5>
-<h4 class="header-dark">{object3.date}</h4>
-   </div>
+        <h5 className="margin-top-class">Year</h5>
+        <h4 className="header-dark">{object3.date}</h4>
+            </div>
 
    
-   <div  class="project-content"> 
+   <div  className="project-content"> 
 
-   <div> <p class="header-light"> InVision Studio is a new powerful tool where you can design, prototype and animate your projects easily.
-One of InVision's initiatives is the Design Forward Fund, a $5 million fund dedicated to investing in the future of design.
-I'm happy to say that my idea was among several selected for implementation and shortly after the initial interviews, 
-we began shaping requirements for the Basic UX project.</p>
+   <div> <p className="header-light"> {object3.text1}</p>
 <br></br>
-<p class="header-light">
-Our goal was to create an extensive library of components and assets to help designers wireframe their web projects faster.
-Over the course of 5 months I designed more than 400 layout components in 30 categories (each prepared for desktop, tablet & phone screens), 128 icons, 56 user journey map elements and over 100 user interface elements.
-You can easily customize and combine them when working on your wireframes.
+<p className="header-light">
+{object3.text2}
 </p>
 <br></br>
-<p class="header-light">
-Aside from that, I was in touch with the Director of Product and the InVision tech team to report issues and bugs that I found within the software, as well as to propose improvements regarding certain functionalities.
-It was exciting to see how the product evolved and improved with each update during this short time.
-</p>
+<p className="header-light">
+{object3.text3}</p>
 <br></br>
-<p class="header-light">
-The final deliverable was a family of 4 products that you can download and use for free.
-Just download <a href="https://www.invisionapp.com/studio/" target="_blank">InVision Studio</a>, open their App Store and search for 128 Outline Icons, eCommerce Wireframe Kit, User Interface Kit and Web Wireframe Kit.
-</p>
-<br></br>
-<h4 class="header-light"><a href="https://www.behance.net/gallery/81908469/Basic-UX-Free-design-resources-for-InVision-Studio" target="_blank">View case study on Behance.</a></h4>
-
+<p className="header-light">
+        The final deliverable can be viewed as a live demo below
+        </p>
+        <br></br>
+        <p className="header-light"><a href={object3.projectHref} target="_blank" rel="noreferrer">View Live Demo</a></p>
+       
 </div>
  
    </div>
@@ -242,7 +221,7 @@ Just download <a href="https://www.invisionapp.com/studio/" target="_blank">InVi
             object3.imageUrl.map((image, index) => {
                 
                 const count = index + 1;
-                return <img src={process.env.PUBLIC_URL + '/images/project-images/project'+object3.imgProp+'/pathfinder'+count +'.JPG'} width="100%"/> 
+                return <img src={process.env.PUBLIC_URL + '/images/project-images/project'+object3.imgProp+'/pathfinder'+count +'.JPG'} width="100%" key={index} alt=""/> 
             })
         }
         </div>

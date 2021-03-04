@@ -168,7 +168,7 @@ a{
   }
 
   .close .overlay-image2{
-    position: absolute;
+    position: fixed;
     top: 88px;
     z-index: 228;
     width: inherit;
@@ -178,11 +178,28 @@ a{
     /* background-position: right; */
    visibility: visible;
    animation: movediv 1s ease-in;
-    background: url('../images/portfolio-real2.svg');
+
+    background: url('../images/instagram-icon.jpg');
   }
 
   .close .overlay-image3{
-    position: absolute;
+    position: fixed;
+    top: 88px;
+    z-index: 228;
+    width: inherit;
+    height: 200vh;
+    transition: .5s;
+    background-repeat: no-repeat;
+ 
+   visibility: visible;
+   animation: movediv 1s ease-in;
+    background: url('../images/linkedin-icon.png');
+ 
+
+  }
+
+  .close .overlay-image4{
+    position: fixed;
     top: 88px;
     z-index: 228;
     width: inherit;
@@ -192,7 +209,10 @@ a{
     background-position: right;
    visibility: visible;
    animation: movediv 1s ease-in;
-    background: url('../images/right-arrow.svg');
+    background: url('../images/george-picture.png');
+    background-repeat: no-repeat;
+
+
   }
 
   .nav-con:hover .overlay-image{

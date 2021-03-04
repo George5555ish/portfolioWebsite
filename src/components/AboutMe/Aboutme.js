@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./aboutme.css";
 
 export default function Aboutme() {
   return (
@@ -8,9 +7,9 @@ export default function Aboutme() {
     <div className="margin-bottom">
 
     </div>
-      <div className="about-main">
+      <div className="about-main ">
      
-        <section class="about-top">
+        <section className="about-top">
          
         
               <div className="about-first">
@@ -22,11 +21,11 @@ export default function Aboutme() {
             design.
                 </h1>
               </div>
-              <div class="about-second">
-                <h3 class="header-light">
-                Over the past year <span>and counting</span> ,I have been working
+              <div className="about-second">
+                <h3 className="header-light">
+                Over the past 2 years ,I have been working
             with rising startups, working solo and leading small open source
-            projects. In my spare time I enjoy article writing on quora.
+            projects. In my spare time I enjoy article writing on Quora.
                 </h3>
            
           
@@ -35,33 +34,34 @@ export default function Aboutme() {
 
 
 <hr></hr>
-        <section class="about-services-tools">
-          <div class="wrapper animate--me">
-            <div class="row text-left-center">
-              <div class="about-services">
-                <h5>Design services</h5>
+        <section className="about-services-tools">
+          <div className="wrapper animate--me">
+            <div className="row text-left-center">
+              <div className="about-services">
+                <h5>Full Stack Services</h5>
                 <h3>
-                  Art direction<em> / </em>
+                  Database Design<em> / </em>
                   Web & mobile<em> / </em>
-                  Brand identity<em> / </em>
-                  UX & UI<em> / </em>
-                  Iconography<em> / </em>
-                  Animation<em> / </em>
-                  Photography
+                  Deplyoment<em> / </em>
+                  Web App Management<em> / </em>
+                  Microservices<em> / </em>
+       
+                  MVC <em> / </em>
+                  API Development
                 </h3>
               </div>
-              <div class="about-services">            
+              <div className="about-services">            
                   <h5>Tools I use</h5>
                 <h3>
-                  Photoshop<em> / </em>
-                  Illustrator<em> / </em>
-                  Sketch<em> / </em>
-                  XD<em> / </em>
-                  InVision<em> / </em>
-                  UXPin<em> / </em>
-                  After Effects<em> / </em>
-                  Premiere Pro<em> / </em>
-                  Lightroom
+                  Node JS<em> / </em>
+                  React JS<em> / </em>
+                  MYSQL<em> / </em>
+                  PostgreSQL<em> / </em>
+                  Java Spring Boot<em> / </em>
+                  Git<em> / </em>
+                  Laravel<em> / </em>
+                  Flutter<em> / </em>
+                  Bootstrap
                 </h3>
               </div>
             </div>
@@ -69,18 +69,18 @@ export default function Aboutme() {
         </section>
         <hr></hr>
         <section >
-          <div class="wrapper">
-          <section class="about-top">
+          <div className="wrapper">
+          <section className="about-top">
          
         
-         <div className="about-first">
+         <div classNameName="about-first">
            <h5>EXPERIENCE</h5>
            <h1>
-         Over a year's work of experience
+         Over 2 years of work experience
            </h1>
          </div>
-         <div class="about-second">
-           <h3 class="header-light">
+         <div className="about-second">
+           <h3 className="header-light">
            I’ve been lucky enough to establish relationships with amazing clients from all over the world, 
            ranging from individual clients, through up-and-coming startups, to multinational companies.
             For more details, head over to my LinkedIn profile.
@@ -91,106 +91,73 @@ export default function Aboutme() {
    </section>
 
           
-            <div class="list animate--me">
-              <div class="line">
-                <div>
-                  <h4 class="header-dark">Damian Watracz Design</h4>
+            <div className="list animate--me">
+              <div className="line">
+                <div className="line">
+                  <h4 className="header-dark">Four Quest Services</h4>
                 </div>
                 <div>
-                  <h4 class="header-light">
-                    Founder, Creative Director, Designer
+                  <h4 className="header-light">
+                    Front End Engineer
                   </h4>
                 </div>
                 <div>
-                  <h4 class="header-light">October 2010 — Present</h4>
+                  <h4 className="header-light">September 2020 — Present</h4>
                 </div>
               </div>
-              <div class="line">
+              <div className="line">
                 <div>
-                  <h4 class="header-dark">James Cook Media</h4>
+                  <h4 className="header-dark">Miracle Divine Ventures</h4>
                 </div>
                 <div>
-                  <h4 class="header-light">Product / Web / UI / UX Designer</h4>
+                  <h4 className="header-light"> Web Developer</h4>
                 </div>
                 <div>
-                  <h4 class="header-light">June 2018 — Present</h4>
-                </div>
-              </div>
-              <div class="line">
-                <div>
-                  <h4 class="header-dark">One More Time</h4>
-                </div>
-                <div>
-                  <h4 class="header-light">Co-Founder, Web / UI Designer</h4>
-                </div>
-                <div>
-                  <h4 class="header-light">December 2015 — Present</h4>
+                  <h4 className="header-light">June 2018 — December 2018</h4>
                 </div>
               </div>
-              <div class="line">
+              <div className="line">
                 <div>
-                  <h4 class="header-dark">Estimote via Pilot</h4>
+                  <h4 className="header-dark">Moms and Widows</h4>
                 </div>
                 <div>
-                  <h4 class="header-light">Web / UI / UX Designer</h4>
+                  <h4 className="header-light ">Full Stack Developer</h4>
                 </div>
                 <div>
-                  <h4 class="header-light">February 2016 — April 2016</h4>
-                </div>
-              </div>
-              <div class="line">
-                <div>
-                  <h4 class="header-dark">James Cook Publishing</h4>
-                </div>
-                <div>
-                  <h4 class="header-light">Art Director, Web / UI Designer</h4>
-                </div>
-                <div>
-                  <h4 class="header-light">February 2015 — August 2015</h4>
+                  <h4 className="header-light">January 2020 - June 2020</h4>
                 </div>
               </div>
-              <div class="line">
+              <div className="line">
                 <div>
-                  <h4 class="header-dark">Fitmo</h4>
+                  <h4 className="header-dark">Addax Petroleum Corp.</h4>
                 </div>
                 <div>
-                  <h4 class="header-light">Web / UI / UX Designer</h4>
+                  <h4 className="header-light margin-left">IT and Comms Intern</h4>
                 </div>
                 <div>
-                  <h4 class="header-light">October 2013 — April 2014</h4>
-                </div>
-              </div>
-              <div class="line">
-                <div>
-                  <h4 class="header-dark">Line2</h4>
-                </div>
-                <div>
-                  <h4 class="header-light">UI / UX Designer</h4>
-                </div>
-                <div>
-                  <h4 class="header-light">March 2012 — November 2013</h4>
+                  <h4 className="header-light">January 2016 — June 2016</h4>
                 </div>
               </div>
-              <div class="line">
+              <div className="line">
                 <div>
-                  <h4 class="header-dark">OpenDrive</h4>
+                  <h4 className="header-dark">Nigerian Railway Corp.</h4>
                 </div>
                 <div>
-                  <h4 class="header-light">Web / UI / UX Designer</h4>
+                  <h4 className="header-light">Intern</h4>
                 </div>
                 <div>
-                  <h4 class="header-light">October 2011 — May 2014</h4>
+                  <h4 className="header-light">January 2017 — June 2017</h4>
                 </div>
               </div>
-              <div class="line">
+              <div className="line">
                 <div>
-                  <h4 class="header-dark">Invent Group</h4>
+                  <h4 className="header-dark">NeckTies Corporation</h4>
                 </div>
                 <div>
-                  <h4 class="header-light">Co-Founder, Web / UI Designer</h4>
+                  <h4 className="header-light">Full Stack Developer</h4>
                 </div>
                 <div>
-                  <h4 class="header-light">October 2010 — December 2012</h4>
+                  <h4 className="header-light">October 2018 — December 2018</h4>
                 </div>
               </div>
             </div>

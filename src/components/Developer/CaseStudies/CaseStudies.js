@@ -19,10 +19,10 @@ export const CaseStudies = ({header, subheader, internal}) =>{
           {
           !internal ? totalObjects[0].map((project, index) => {
               return (
-                <Route>
-                <Link class="list-item-portfolio" key={index} to={`/projects/${project.projectUrl}`}>
+                <Route key={index}>
+                <Link className="list-item-portfolio" key={index} to={`/projects/${project.projectUrl}`}>
                 <div className={`flex-inner ${project.projectUrl}`}>
-           <a href="project/basicux.html" className="flex-link">
+           <Link to={`/projects/${project.projectUrl}`} className="flex-link">
              
              <div className="flex-inner-pri">
              <div className="opp-action">
@@ -31,15 +31,15 @@ export const CaseStudies = ({header, subheader, internal}) =>{
                <span className="dark-font-helper">{project.title}</span>
                <div className="more with-icon"><p>
                    View Case Study<span
-                     class="icon icon-arrow-link-thin icon--on-right">
-                        <img src={rightArrow} width="30px" height="12px"/>
+                     className="icon icon-arrow-link-thin icon--on-right">
+                        <img src={rightArrow} width="30px" height="12px" alt=""/>
                      </span>
                      </p></div>
              </strong>
              </div>
              
              </div>
-           </a>
+           </Link>
               </div>
           </Link>
           </Route>
@@ -48,10 +48,10 @@ export const CaseStudies = ({header, subheader, internal}) =>{
                   {
                     internalObjects.map((project, index) => {
               return (
-                <Route>
-                <Link class="list-item-portfolio" key={index} to={`/projects/${project.projectUrl}`}>
+                <Route key={index}>
+                <Link className="list-item-portfolio" key={index} to={`/projects/${project.projectUrl}`}>
                 <div className={`flex-inner ${project.projectUrl}`}>
-           <a href="project/basicux.html" className="flex-link">
+                <Link to={`/projects/${project.projectUrl}`} className="flex-link">
              
              <div className="flex-inner-pri">
              <div className="opp-action">
@@ -60,15 +60,15 @@ export const CaseStudies = ({header, subheader, internal}) =>{
                <span className="dark-font-helper">{project.title}</span>
                <div className="more with-icon"><p>
                    View Case Study<span
-                     class="icon icon-arrow-link-thin icon--on-right">
-                        <img src={rightArrow} width="30px" height="12px"/>
+                     className="icon icon-arrow-link-thin icon--on-right">
+                        <img src={rightArrow} width="30px" height="12px" alt=""/>
                      </span>
                      </p></div>
              </strong>
              </div>
              
              </div>
-           </a>
+           </Link>
               </div>
           </Link>
           </Route>
@@ -86,10 +86,10 @@ export const CaseStudies = ({header, subheader, internal}) =>{
            {
             !internal ? totalObjects[1].map((project, index) => {
               return (
-                <Route>
-                <Link class="list-item-portfolio" key={index} to={`/projects/${project.projectUrl}`}>
+                <Route key={index}>
+                <Link className="list-item-portfolio" key={index} to={`/projects/${project.projectUrl}`}>
              <div className={`flex-inner ${project.projectUrl}`}>
-           <a href="project/basicux.html" className="flex-link">
+             <Link to={`/projects/${project.projectUrl}`} className="flex-link">
              
              <div className="flex-inner-pri">
              <div className="opp-action">
@@ -98,15 +98,15 @@ export const CaseStudies = ({header, subheader, internal}) =>{
                <span className="dark-font-helper">{project.title}</span>
                <div className="more with-icon"><p>
                    View Case Study<span
-                     class="icon icon-arrow-link-thin icon--on-right">
-                        <img src={rightArrow} width="30px" height="12px"/>
+                     className="icon icon-arrow-link-thin icon--on-right">
+                        <img src={rightArrow} width="30px" height="12px" alt=""/>
                      </span>
                      </p></div>
              </strong>
              </div>
              
              </div>
-           </a>
+           </Link>
               </div>
           </Link>
           </Route>

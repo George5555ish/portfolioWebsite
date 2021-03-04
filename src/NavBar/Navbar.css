@@ -139,10 +139,6 @@ nav#nav .logo {
   height: 46px;
   float: left;
 }
- .logo > svg:first-child {
-
-  /* display: none; */
-}
  .logo > svg:last-child {
   width: 167px;
   transition: 1.2s;
@@ -153,6 +149,13 @@ nav#nav .logo {
  .logo:active > svg path {
   fill: rgba(255, 255, 255, 0.95);;
   /* f */
+}
+
+@media (max-width: 670px){
+
+  .image-text{
+   display: none;
+  }
 }
 
 header#header .menu {

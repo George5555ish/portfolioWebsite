@@ -50,7 +50,7 @@ function Homepage() {
   const [emailValue, setEmailValue] = useState("");
   const [fullName, setFullName] = useState("");
   const [message, setMessage] = useState("");
-  const [reason, setReason] = useState("What are you Interested In?");
+  const [reason, setReason] = useState("");
   const [toggleForm, setToggleForm] = useState(false);
   const [showCircular, setShowCircular] = useState(false)
 
@@ -136,14 +136,14 @@ function Homepage() {
       <Developer />
       <div className="container">
         <div className="wrapper-div">
-          <img src={mainImg} className="wrapper-div-img" />
+          <img src={mainImg} className="wrapper-div-img" alt=""/>
           <div className="row">
             <div className="main-copy">
               <h5>Mbajiaku George</h5>
               <span className="large">Web || App Developer</span>
               <h3 className="header-light">
-                Over the past 9 years, as an art director and designer, I’ve
-                worked with big companies and up-and-coming startups to
+                Over the past 2 years, as a software developer, I’ve
+                worked with up-and-coming startups and sole clients to
                 successfully help them reach their full potential and attract
                 new customers.
               </h3>
@@ -153,9 +153,9 @@ function Homepage() {
                     View Projects
                   </a>
                 </h4>
-                <span>or</span>
+                <span className="or-class">or</span>
                 <h4>
-                  <a href="about" className="internal special hover-help">
+                  <a href="/about" className="internal special hover-help read-about">
                     Read About Me
                   </a>
                 </h4>
@@ -177,39 +177,39 @@ function Homepage() {
         />
 
         <div className="work-tgt">
-          <a href="#">
-            <div> NEED A DEVELOPER ?</div>
-          </a>
+          <div>
+            <p> NEED A DEVELOPER ?</p>
+          </div>
           <div className="working">
             <div id="open-popup-btn">
               <h5> Let's Work Together</h5>
-              <img src={rightArrow} width="160px" height="20px" />
+              <img src={rightArrow} width="160px" height="20px" alt=""/>
             </div>
           </div>
         </div>
 
         <div>
-          <div class="popup center">
+          <div className="popup center">
         
           {
             toggleForm ? <div>
-            <div class="icon">
-    <i class="fa fa-check"></i>
+            <div className="icon">
+    <i className="fa fa-check"></i>
   </div>
-  <div class="title">
+  <div className="title">
     Success!!
   </div>
-  <div class="description">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil provident voluptatem nulla placeat
+  <div className="description">
+    Thanks For Reaching out! 
   </div>
-  <div class="dismiss-btn">
+  <div className="dismiss-btn">
     <button id="dismiss-popup-btn">
       Dismiss
     </button>
   </div>
-            </div> : showCircular ? <CircularProgress /> : <div class="row">
+            </div> : showCircular ? <CircularProgress /> : <div className="form-parent">
               <form
-                class="col-sm-6-6 col-md-6-12 col-smd-12-12 col-lg-6-12"
+                
                 onSubmit={handleSubmit}
                 id="myForm"
               >
@@ -298,11 +298,6 @@ function Homepage() {
           }
            
           </div>
-          {/* <div class="center">
-  <button>
-    Open Popup
-  </button>
-</div> */}
         </div>
 
         <div className="hr"></div>

@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
-import NameImg from "../images/slider_images/img1.jpg";
-import {
-  Link
-
-} from "react-router-dom";
 import "./NavOverlay.css";
 
 function NavOverlay() {
@@ -25,21 +20,21 @@ function NavOverlay() {
   };
 
   const changeBackground = (value) => {
-    if (value == 1) {
+    if (value === 1) {
       setBackgroundClass("overlay-image2");
     }
 
-    if (value == 2) {
+    if (value === 2) {
       setBackgroundClass("overlay-image3");
     }
 
-    if (value == 3) {
+    if (value === 3) {
       setBackgroundClass("overlay-image4");
     }
-    if (value == 4) {
+    if (value === 4) {
       setBackgroundClass("overlay-image5");
     }
-    if (value == 5) {
+    if (value === 5) {
       setBackgroundClass("overlay-image6");
     }
   };
@@ -62,10 +57,10 @@ function NavOverlay() {
             <h5>Menu</h5>
             <ul>
               <li>
-                <a href="index.html" data-page="home">
+                <a href="/" data-page="home">
                   <i
                     className="i-hover"
-                    onMouseOver={() => changeBackground(1)}
+                    onMouseOver={() => changeBackground()}
                     onMouseOut={() => resetBackground()}
                   ></i>
                   Projects
@@ -73,42 +68,34 @@ function NavOverlay() {
               </li>
               <li>
                 <a 
-                  href="about"
+                  href="/about"
                   data-page="about"
-                  class="nav-over"
-                  onMouseOver={() => changeBackground(1)}
+                  className="nav-over"
+                  onMouseOver={() => changeBackground(3)}
                   onMouseOut={() => resetBackground()}
                 >
                   <i></i>About me
                 </a>
               </li>
+             
               <li>
                 <a
-                  href="contact.html"
-                  data-page="contact"
-                  class="nav-over"
-                  onMouseOver={() => changeBackground(2)}
+                  href="https://www.instagram.com/george_son_/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="nav-over"
+                  onMouseOver={() => changeBackground(1)}
                   onMouseOut={() => resetBackground()}
                 >
-                  <i></i>Contact
+                  <i></i>Instagram
                 </a>
               </li>
               <li>
                 <a
-                  href="https://dribbble.com/damianwatracz"
+                  href="https://www.linkedin.com/in/george-mbajiaku-8747b2ab/"
                   target="_blank"
-                  class="nav-over"
-                  onMouseOver={() => changeBackground(2)}
-                  onMouseOut={() => resetBackground()}
-                >
-                  <i></i>Dribbble
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/damianwatracz/"
-                  target="_blank"
-                  class="nav-over"
+                  rel="noreferrer"
+                  className="nav-over"
                   onMouseOver={() => changeBackground(2)}
                   onMouseOut={() => resetBackground()}
                 >
