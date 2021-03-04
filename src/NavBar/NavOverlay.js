@@ -44,7 +44,7 @@ function NavOverlay() {
   };
   return (
     <nav className={overlay ? "close" : "open-nav"}>
-   {  !overlay && <Navbar setToogle={setToogle} overlay={overlay} />}
+   <Navbar setToogle={setToogle} overlay={overlay} />
       <nav id="nav-overlay-content">
         <div className={backgroundClass}></div>
         
