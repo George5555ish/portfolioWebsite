@@ -14,6 +14,7 @@ import Button from "@material-ui/core/Button";
 import "./homepage.css";
 import { Typography } from "@material-ui/core";
 import mainImg from "../../images/project-images/portfolio-image-main.png";
+import NewProjectDisplay from "../NewProjectDisplay/NewProjectDisplay";
 
 function Homepage() {
   const useStyles = makeStyles((theme) => ({
@@ -169,12 +170,14 @@ function Homepage() {
           </div>
         </div>
 
-        <CaseStudies header={"PERSONAL PROJECTS"} subheader={"Case Studies"} />
+        {/* <CaseStudies header={"PERSONAL PROJECTS"} subheader={"Case Studies"} />
         <CaseStudies
           header={"INTERNAL PROJECTS"}
           subheader={"Case Studies"}
           internal={true}
-        />
+        /> */}
+
+        <NewProjectDisplay />
 
         <div className="work-tgt">
           <div>

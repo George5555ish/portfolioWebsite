@@ -89,6 +89,7 @@ ul {
   transition: 2s;
   margin: 0 auto;
   display: block;
+  scroll-behavior: smooth;
 }
 
 

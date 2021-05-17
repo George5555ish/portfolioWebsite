@@ -1,0 +1,87 @@
+.display-head{
+    margin-top: 200px;
+}
+
+.display-container h1 {
+    font-family: "Lato";
+    font-weight: bold;
+    transition:0.45s;
+}
+
+.stroke-help{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+  }
+
+
+.project-title{
+    font-size: 3.3em;
+    letter-spacing: 0.12em;
+  
+
+}
+
+
+.project-list{
+    margin: 190px 0;
+    
+}
+
+
+
+.project-container{
+    padding: 30px 10px;
+    border: 1px solid;
+    
+    border-left: transparent;
+    border-right: transparent;
+   position: relative;
+    cursor: pointer;
+    height: 100px;
+    transition: 0.45s;
+    display: flex;
+}
+.project-image{
+    position: absolute;
+    visibility: hidden;
+   
+    top: -400px;
+   
+}
+.project-container:hover .project-title {
+    animation: stroke 1s ease forwards;
+}
+@keyframes stroke {
+    0% {
+        -webkit-text-fill-color: transparent;
+        opacity: 30%;
+    }
+
+    100%{
+        -webkit-text-fill-color: black;
+        opacity: 100%;
+    }
+   
+}
+
+.project-container:hover .project-image{
+
+    transition: 0.45s;
+    visibility: visible;
+    transform: scale(0.4);
+    opacity: 1;
+}
+
+@media (max-width: 670px){
+    .project-container:hover .project-image{
+        transform: scale(0.3);
+    }
+
+    .stroke-help{
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .project-title {
+        font-size: 25px
+    }
+  }

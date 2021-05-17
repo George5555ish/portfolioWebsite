@@ -32,19 +32,8 @@ export default function SingleProject() {
 // we used 2 arrays in the projects file
 //so we had to loop through the two arrays to find
 //where the object of our data to render was.
- const object1 = project[0].find(project => project.projectUrl === location );
- const object2 = project[1].find(project => project.projectUrl === location );
- const object3 = internal.find(project => project.projectUrl === location );
+ const object1 = project.find(project => project.projectUrl === 'project' + location );
 
-//  console.log(object2, object1)
-//  if (!object1 || object1 === undefined){
-//      setFinalObject(object2);
-//      console.log(finalObject)
-//  } else {
-//     setFinalObject(object1);
-//     console.log(finalObject)
-
-//  }
   
 
 
@@ -118,118 +107,7 @@ export default function SingleProject() {
         </div>
       }
 
-      {
-          object2 !== undefined && <div> <div className="project-row">
-   
-
-          <div className="project-info"> 
-            <h5 className="project-info-header">Case study</h5>
-        
-            <h1 className="project-heading">{object2.title}</h1>
-        <h5 className="margin-top-class">Tech Stack</h5>
-        <h4 className="header-dark">{object2.techStack1}<br></br>
-        {object2.techStack2}<br></br>
-        {object2.techStack3}<br></br>
-       </h4>
-
-        <h5 className="margin-top-class">Year</h5>
-        <h4 className="header-dark">{object2.date}</h4>
-            </div>
-
-   
-   <div  className="project-content"> 
-
-   <div> <p className="header-light"> {
-       object2.text1
-   }</p>
-<br></br>
-<p className="header-light">
-{object2.text2}
-</p>
-<br></br>
-<p className="header-light">
-{
-    object2.text3
-}
-</p>
-<br></br>
-<p className="header-light">
-        The final deliverable can be viewed as a live demo below
-        </p>
-        <br></br>
-        <p className="header-light"><a href={object2.projectHref} target="_blank" rel="noreferrer">View Live Demo</a></p>
-       
-</div>
- 
-   </div>
-
-</div>
-
-<div>
-        {
-            object2.imageUrl.map((image, index) => {
-                
-                const count = index + 1;
-                return <img src={process.env.PUBLIC_URL + '/images/project-images/project'+object2.imgProp+'/pathfinder'+count +'.JPG'} width="100%" key={index} alt=""/> 
-            })
-        }
-        </div>
-</div>
-      }
-
-      {
-          object3 !== undefined &&  <div><div className="project-row">
-   
-
-          <div className="project-info"> 
-            <h5 className="project-info-header">Case study</h5>
-        
-            <h1 className="project-heading">{object3.title}</h1>
-        <h5 className="margin-top-class">Tech Stack</h5>
-        <h4 className="header-dark">{object3.techStack1}<br></br>
-        {object3.techStack2}<br></br>
-        {object3.techStack3}<br></br>
-       </h4>
-
-        <h5 className="margin-top-class">Year</h5>
-        <h4 className="header-dark">{object3.date}</h4>
-            </div>
-
-   
-   <div  className="project-content"> 
-
-   <div> <p className="header-light"> {object3.text1}</p>
-<br></br>
-<p className="header-light">
-{object3.text2}
-</p>
-<br></br>
-<p className="header-light">
-{object3.text3}</p>
-<br></br>
-<p className="header-light">
-        The final deliverable can be viewed as a live demo below
-        </p>
-        <br></br>
-        <p className="header-light"><a href={object3.projectHref} target="_blank" rel="noreferrer">View Live Demo</a></p>
-       
-</div>
- 
-   </div>
-
-</div>
-
-<div>
-        {
-            object3.imageUrl.map((image, index) => {
-                
-                const count = index + 1;
-                return <img src={process.env.PUBLIC_URL + '/images/project-images/project'+object3.imgProp+'/pathfinder'+count +'.JPG'} width="100%" key={index} alt=""/> 
-            })
-        }
-        </div>
-</div>
-      }
+     
         </div>
         
     )
